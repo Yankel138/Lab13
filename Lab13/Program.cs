@@ -10,7 +10,7 @@ namespace Lab13
     {
         static void Main(string[] args)
         {
-            Building build = new Building("Плесецкая 14", 13, 8, 69);
+            Building build = new Building("Ялтинская 10", 13, 8, 69);
             build.Print();
             Console.ReadKey();
         }
@@ -129,8 +129,8 @@ namespace Lab13
             }
         }
 
-        public MultiBuilding (string address, double length, double width, double height, int level) 
-            :base (address, length, width, height)
+        public MultiBuilding(string address, double length, double width, double height, int level)
+            : base(address, length, width, height)
         {
             Address = address;
             Length = length;
