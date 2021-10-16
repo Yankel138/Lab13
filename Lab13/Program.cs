@@ -10,7 +10,7 @@ namespace Lab13
     {
         static void Main(string[] args)
         {
-            Building build = new Building("Ялтинская 10", 13, 8, 69);
+            Building build = new Building("Ялтинская 10", 10, 8, 69);
             build.Print();
             Console.ReadKey();
         }
