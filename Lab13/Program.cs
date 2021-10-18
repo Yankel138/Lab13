@@ -10,8 +10,10 @@ namespace Lab13
     {
         static void Main(string[] args)
         {
-            Building build = new Building("Ялтинская 10", 10, 8, 69);
+            Building build = new Building("Ялтинская 10", 40, 12, 10);
             build.Print();
+            MultiBuilding mb = new MultiBuilding("Плесецкая 14", 138, 15, 69, 24);
+            mb.Print();
             Console.ReadKey();
         }
     }
@@ -139,5 +141,11 @@ namespace Lab13
             Level = level;
         }
 
+        public new void Print()
+            
+        {
+            base.Print();
+            Console.WriteLine($"Количество этажей:{level}");
+        }
     }
 }
